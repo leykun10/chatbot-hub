@@ -4,6 +4,9 @@ import { Footer } from '@/components/footer'
 export const metadata = {
   title: 'Chatbot hub',
   description: 'A place to explore knowledge base based chatbots',
+  icons: {
+    icon: [{ url: '/favicon.ico' }]
+  }
 }
 
 export default function RootLayout({
