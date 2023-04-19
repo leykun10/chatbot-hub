@@ -1,12 +1,20 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import styles from './page.module.css'
+import { Footer } from "@/components/footer";
+import { ItemCard } from "@/components/itemCard";
+import Main from "@/components/main";
+import { Navbar } from "@/components/navbar";
+import { Sidebar } from "@/components/sidebar";
+import { supabase } from "@/utils/superbase";
 
-const inter = Inter({ subsets: ['latin'] })
+export const revalidate = 60; // revalidate this page every 60 seconds
+export default async function Home() {
 
-export default function Home() {
+  const {data,error} = await supabase.from('chatbot').select('*')
+  
   return (
-    <main className={styles.main}> 
-    </main>
-  )
+        <div className="flex flex-col lg:flex-row w-screen lg:ml-80 mb-10 mt-8">
+          <Sidebar/>
+          {error!=null?<div></div>:
+         <Main  data={data}/>}
+        </div>
+  );
 }
