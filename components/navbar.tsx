@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Modal from "./submitModal";
 
 export const Navbar: FC = () => {
   return (
@@ -10,10 +11,13 @@ export const Navbar: FC = () => {
         </a>
       </div>
       <div className="flex flex-row items-center gap-8">
-      <div className="flex hover:underline text-center"><a href="/about">About</a></div>
-      <div className="flex hover:underline text-center"><a href="/blog">Blog</a></div>
-      <div className="flex hover:underline text-center"><a href="/chatbot">Create your own chatbot</a></div>
-      <div className="flex hover:underline text-center"><a href="/chatbot">Submit a chatbot</a></div>
+      {/* <div className="flex hover:underline text-center"><a href="/about">About</a></div> */}
+      {/* <div className="flex hover:underline text-center"><a href="/blog">Blog</a></div> */}
+      <div className="flex hover:underline text-center"><a href="https://www.chatbase.co/?via=leykun" target="_blank">Create your own chatbot</a></div>
+      {/* <div className="flex hover:underline text-center"><a href="/submit_chatbot">Submit a chatbot</a></div> */}
+      <div className="flex">
+        <Modal/>
+      </div>
       </div>
    </div>
   );
