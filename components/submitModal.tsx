@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 
 export default function Modal() {
-  const [showModal, setShowModal] = useState()
+  const [showModal, setShowModal] = useState(false)
   const [text, setText] = useState("")
 
-  const handleTextChange = (e) => { 
+  const handleTextChange = (e:any) => { 
     setText(e.target.value)
     }
 
