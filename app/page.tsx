@@ -1,7 +1,7 @@
 import Main from "@/components/main";
 import Sidebar from "@/components/sidebar";
 import { supabase } from "@/utils/superbase";
-
+import Script from "next/script";
 export const revalidate = 60; // revalidate this page every 60 seconds
 export default async function Home() {
 
@@ -9,6 +9,15 @@ export default async function Home() {
   
   return (
         <div className="flex flex-col lg:flex-row w-screen lg:ml-80 mb-10 mt-8">
+               {/* <!-- Google tag (gtag.js) --> */}
+<Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}}`}></Script>
+<Script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
+</Script>
+
            {/* @ts-expect-error Server Component */}
           <Sidebar/>
           {error!=null?<div></div>:
