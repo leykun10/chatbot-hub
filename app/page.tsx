@@ -11,13 +11,19 @@ export default async function Home() {
     <>
         <div className="flex flex-col lg:flex-row w-screen lg:ml-80 mb-10 mt-8">
                {/* <!-- Google tag (gtag.js) --> */}
-<Script id="src_anlaytics" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}/>
-<Script id="src_analytics_window">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
-  gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
-</Script>
+<Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS }!);
+        `}
+      </Script>
 
            {/* @ts-expect-error Server Component */}
           <Sidebar/>
