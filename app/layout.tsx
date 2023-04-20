@@ -2,8 +2,8 @@ import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 export const metadata = {
-  title: 'Chatbot hub',
-  description: 'A place to explore knowledge base based chatbots',
+  title: 'AI Chatbots',
+  description: 'A place to easily explore and test fine tuned with openai domain specific ai chatbots. It also enables you to create your own chatbots and share them with the world.',
   icons: {
     icon: [{ url: '/favicon.ico' }]
   }
