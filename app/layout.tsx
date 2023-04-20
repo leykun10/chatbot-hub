@@ -1,6 +1,8 @@
 import './globals.css'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import Script from "next/script";
+
 export const metadata = {
   title: 'AI Chatbots',
   description: 'A place to easily explore and test fine tuned with openai domain specific ai chatbots. It also enables you to create your own chatbots and share them with the world.',
