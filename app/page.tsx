@@ -8,12 +8,13 @@ export default async function Home() {
   const {data,error} = await supabase.from('chatbot').select('*')
   
   return (
+    <>
         <div className="flex flex-col lg:flex-row w-screen lg:ml-80 mb-10 mt-8">
                {/* <!-- Google tag (gtag.js) --> */}
-<Script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}}`}></Script>
-<Script>
+<Script id="src_anlaytics" async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}/>
+<Script id="src_analytics_window">
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag(){dataLayer.push(arguments)}
   gtag('js', new Date());
   gtag('config', process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
 </Script>
@@ -23,5 +24,6 @@ export default async function Home() {
           {error!=null?<div></div>:
          <Main  data={data}/>}
         </div>
+        </>
   );
 }
