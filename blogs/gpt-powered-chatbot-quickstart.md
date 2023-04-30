@@ -1,20 +1,18 @@
 ﻿---
-title: Resources to Get You Started Building a GPT-Powered AI Assistant Chatbot
+title: Resources to Get You Started Building a custom  ChatGPT Powered AI Assistant Chatbot
 subtitle: Learn How to Build an Intelligent Chatbot for Quick and Accurate Information Retrieval from a Knowledge Base with OpenAI Chat Completion API.
 date: "2020-12-27"
 ---
 
+ChatGPT has taken the world by storm with its ability to perform a wide range of tasks, from simple to complex. One increasingly popular use case is building chatbots that can answer questions written in natural language from a given knowledge base - something that ChatGPT alone cannot do unless it is trained on the specific knowledge base data. Today, there are products available that allow you to chat with various custom knowledge bases, including blogs, podcasts, documentation, and books. By using natural language, you can ask any question related to the knowledge base's domain, and the chatbot will provide an answer.
 
-Artificial Intelligence (AI) has become increasingly popular in recent years, with advancements in natural language processing and machine learning algorithms. One popular application of AI is the development of chatbots, which can be programmed to answer questions and provide assistance to users. If you are interested in building your own AI assistant chatbot that can answer questions about documents, websites, or any other topic, then you have come to the right place. In this article, we will explore various resources that can help you get started with building an AI chatbot from scratch, regardless of your coding experience. By the end of this article, you will have a good understanding of the tools and techniques needed to create your own AI assistant chatbot that can answer questions about any topic.
+To build such chatbots, there are some fundamental steps you need to follow. In this blog, we'll review three resources that teach you how to build a custom ChatGPT that can be integrated with your knowledge base. We'll explore how to build an AI that can answer questions about your website, how to create an OpenAI Q&A bot with ChatGPT API + embeddings, and how to use embeddings-based search for question answering. With these resources, you'll be well on your way to building a powerful chatbot that can answer questions from your given knowledge base with ease.
 
-
-<h3 ><a href="https://platform.openai.com/docs/tutorials/web-qa-embeddings" >
+<h3 ><a  target="_blank" href="https://platform.openai.com/docs/tutorials/web-qa-embeddings">
 <span style="color:#50C878">
     1 How to build an AI that can answer questions about your website
 </span>
 </a></h3>
-
-
 
 This tutorial by openAI provides a simple yet effective approach to building an AI that can answer questions about your website. The tutorial provides a step-by-step guide that covers all the necessary components required to build the chatbot. The tutorial starts by walking through how to crawl a website, turns the crawled pages into embeddings using the OpenAI Embeddings API, and then creates a basic search functionality that allows a user to ask questions about the embedded information.
 
@@ -25,14 +23,14 @@ The tutorial assumes that the reader has some basic knowledge of Python and GitH
 
 The tutorial provides the full code on GitHub, which the reader can clone. Alternatively, the reader can follow along and copy each section into a Jupyter notebook and run the code step by step, or simply read along. The tutorial also provides useful functions to remove extra spacing and new lines, which can clutter the text and complicate the embeddings process.
 
-The tutorial is well-organized and provides clear explanations of the code and each step involved in building the chatbot. The code snippets are also easy to follow, and the tutorial provides helpful tips to avoid any issues that may arise. The tutorial provides a helpful rule of thumb, which is that one token generally corresponds to ~4 characters of text for common English text. This is helpful in determining the number of input tokens required for embeddings.
-
 
 Overall, this tutorial provides an excellent starting point for building more sophisticated chatbots that make use of custom knowledge bases. The tutorial is suitable for both beginners and experienced programmers, and the step-by-step guide makes it easy to follow along. If the reader runs into any issues working through this tutorial, they can ask a question on the OpenAI Community Forum.
 
 
-<h3><a href="https://www.youtube.com/watch?v=RM-v7zoYQo0" >
-<span color='#50C878'>2 How to create an OpenAI Q&A bot with ChatGPT API + embeddings</span>
+<h3><a target="_blank" href="https://www.youtube.com/watch?v=RM-v7zoYQo0" >
+
+<span style="color:#50C878">
+2 How to create an OpenAI Q&A bot with ChatGPT API + embeddings</span>
 </a></h3>
 
 <a href="https://www.youtube.com/watch?v=RM-v7zoYQo0">
@@ -50,8 +48,9 @@ Additionally, the tutorial will cover creating an API with streaming, which enab
 
 Overall, this video tutorial provides a comprehensive and in-depth guide to building a chatbot that can answer questions about Paul Graham's essays. The explanations are clear and easy to follow, making it a valuable resource for both beginners and experienced programmers.
 
-<h3><a href="https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb" >
-<span color='#50C878'> 3 Question answering using embeddings-based search</span>
+<h3><a target="_blank" href="https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb" >
+
+<span style="color:#50C878">3 Question answering using embeddings-based search</span>
 </a></h3>
 
 
@@ -63,8 +62,9 @@ Furthermore, the chapter outlines a step-by-step procedure for implementing the 
 
 Overall, the OpenAI Cookbook's chapter on "Question answering using embeddings-based search" is an excellent resource for those looking to build chatbots or question-answering systems. The chapter is well-written and easy to follow, providing practical guidance for implementing the Search-Ask method. Additionally, the accompanying Jupyter notebook demonstrates the implementation of the Search-Ask method, making it easy to replicate the process.
 
-## Conclusion
-In conclusion, building an AI assistant chatbot that can answer questions about documents, websites, or any other topic can seem like a daunting task, but there are many resources available to help. The three resources discussed in this article provide comprehensive and detailed guides to building chatbots using different approaches, such as embeddings-based search and APIs. The tutorials are suitable for both beginners and experienced programmers and provide step-by-step instructions, code snippets, and helpful tips to guide the user through the process. With these resources, anyone can start building their own AI assistant chatbot and provide helpful assistance to users.
+
+<h3><span style="color:#50C878">Closing Thoughts</span>
+In conclusion, building an AI assistant chatbot that can answer questions about documents, websites, or any other topic can seem like a daunting task, but there are many resources available to help. The three resources discussed in this article provide comprehensive and detailed guides to building chatbots using different approaches, such as embeddings-based search and APIs. The tutorials are suitable for both beginners and experienced programmers and provide step-by-step instructions, code snippets, and helpful tips to guide the user through the process. With these resources, anyone can start building their own AI assistant chatbot to chat with their custom knowledgebase.
 
 
 
