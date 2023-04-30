@@ -25,9 +25,10 @@ export const  getPostContent = async (filePath:string)=>{
         const rawContent = fs.readFileSync(filePath, {
             encoding: "utf-8",
         })
-        const {content} = matter(rawContent)
+        const {content,data} = matter(rawContent)
         return {
             content: content,
+            data:data
         }
 
 }
