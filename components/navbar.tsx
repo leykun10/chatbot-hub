@@ -13,7 +13,7 @@ export const Navbar: FC = () => {
       <div className="flex flex-row items-center gap-8 ">
       {/* <div className="flex hover:underline text-center"><a href="/about">About</a></div> */}
       <div className="flex hover:underline text-center hover:text-emerald-400 "><a href="/blog">Blog</a></div>
-      <div className="flex hover:underline text-center hover:text-emerald-400"><a href="https://www.chatbase.co/?via=leykun" target="_blank">Create your own chatbot</a></div>
+      <div className="flex hover:underline text-center hover:text-emerald-400"><a href="/chatbot">Create your own chatbot</a></div>
       <div className="flex">
         <Modal/>
       </div>

@@ -2,7 +2,7 @@ import { supabase } from "@/utils/superbase";
 import { SidebarItem } from "./sidebarItem";
 
 
-export default async function Sidebar(){
+export default async function Sidebar({name}:{name:string}){
 const {error,data} = await supabase.from('category').select('name')
 
 if (error!=null) return (<div></div>)
@@ -12,7 +12,7 @@ return (
     <div className="h-12 text-black">
       <h2 className="font-bold text-start ml-10">Categories</h2>
     </div>
-    {data!.map((item) => (<SidebarItem category={item.name} key={item.name} />))}
+    {data!.map((item) => (<SidebarItem category={item.name} isActive={name==item.name?true:false} key={item.name} />))}
   </div>
 );
 }
