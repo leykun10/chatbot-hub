@@ -1,7 +1,7 @@
 ﻿---
 title: Resources to Get You Started Building a custom  ChatGPT Powered AI Assistant Chatbot
 subtitle: Learn How to Build an Intelligent Chatbot for Quick and Accurate Information Retrieval from a Knowledge Base with OpenAI Chat Completion API.
-date: "2020-12-27"
+date: "2023-12-27"
 ---
 
 ChatGPT has taken the world by storm with its ability to perform a wide range of tasks, from simple to complex. One increasingly popular use case is building chatbots that can answer questions written in natural language from a given knowledge base - something that ChatGPT alone cannot do unless it is trained on the specific knowledge base data. Today, there are products available that allow you to chat with various custom knowledge bases, including blogs, podcasts, documentation, and books. By using natural language, you can ask any question related to the knowledge base's domain, and the chatbot will provide an answer.
